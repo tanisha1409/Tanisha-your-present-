@@ -1,7 +1,6 @@
-"use client"
+// Server Component: immediately redirect "/" to "/main"
+import { redirect } from "next/navigation"
 
-import { useSidebar } from "../sidebar"
-
-export default function SyntheticV0PageForDeployment() {
-  return <useSidebar />
+export default function Page() {
+  redirect("/main")
 }
